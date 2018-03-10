@@ -28,6 +28,14 @@ with tf.Session() as session:
     # To enabled Tensorboard where you can see all graph and node.
     # After run this program, go to command propmot and type
     #(d:\InstalledSoftware\Anaconda3\envs\tensorflow) C:\Users\binod>tensorboard  --logdir=d:/tensorboard
+    
+# (tensorflow) C:\Users\binod>tensorboard  --logdir=d:/tensorboard
+# W0310 20:21:02.517210 Reloader tf_logging.py:114] Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+# W0310 20:21:02.532909 Reloader tf_logging.py:114] Found more than one metagraph event per run. Overwriting the metagraph with the newest event.
+# TensorBoard 1.5.1 at http://Binod_Dell_Laptop:6006 (Press CTRL+C to quit)
+# Open browser and put address http://Binod_Dell_Laptop:6006 (In your case it would be http://your-computer-hostname:6006)
+
+
     writer = tf.summary.FileWriter("d:/tensorboard",session.graph)
     print(result)
 
